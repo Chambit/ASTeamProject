@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" text="text/css" href="track.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <ul class="list">
+            <!-- <li class="no">번호</li>
+            <li class="name">상품명</li>
+            <li class="loc">상품위치</li>
+            <li class="status">배송상태</li> -->
+        </ul>
+    </div>
+
+    <button type = "button" id="btn">데이터 추가해보기</button>
+    
+    <script>
+        var list = document.querySelector(".list");
+        var btn = document.getElementById("btn");
+
+        btn.onclick = function() {
+
+            add();
+            list.innerHTML="<li>로딩중....<li>"
+
+        }
+
+        function add() {
+            var key = 'Sa7C4js3JCBi%2BPwAPmYYnS4sdvAhCkKzNFP8fVrzKvSuJCvgrbKp4a5i5Yz1jvftkpordirYkDdMRWOjwESDrw%3D%3D'
+
+            fetch("http://openapi.epost.go.kr/trace/retrieveLongitudinalCombinedService/retrieveLongitudinalCombinedService/getLongitudinalCombinedList?serviceKey="+key + "&rgist=8690770027579")
+            .then(function(response){
+
+                return response.text();
+            })
+            .then(function(data){
+                
+
+                var parser = new DOMParser();
+            
+                var xmlDoc = parser.parseFromString(data , 'text/xml');
+
+                conosle.log(result);
+
+
+                
+                var str = "";
+                var a = 1;
+                for(var i = 0 ; i<arr.length; i++){
+                    var status = xmldoc.querySelector('item').Statue;
+
+                    var location = xmldoc.querySelector('location').location;  
+
+                    str += "<li class='no'>"+ a++ + "<li class ='name'>" +"물건" + "<li class = 'loc'>" + location + "<li class = 'status'>" + loc + "<br>"
+                }
+                list.innerHTML=str;
+            })
+        }
+    </script>
+</body>
+
+</html>

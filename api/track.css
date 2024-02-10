@@ -1,0 +1,37 @@
+*{margin:0 ;padding: 0;}
+
+ul li{list-style: none;}
+
+li {
+    border: 1px solid black;
+    float:left;
+    box-sizing: border-box;
+    text-align: center;
+} 
+.no{
+    width: 10%;
+}
+
+.name {
+    width: 20%;
+}
+
+.loc{
+    width: 50%;
+}
+
+.status{
+    width: 20%;
+}
+
+
+
+.wrap { 
+    padding : 15px;
+}
+
+.list {
+    width: 70%;
+    height: 30px;
+    margin: 0 auto;
+}
