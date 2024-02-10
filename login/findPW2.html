@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "find.css">
+</head>
+<body>
+    <div class ="popupFind">
+        <!-- 첫번째 -->
+        <ul class="findHeader">
+            <li><a href="findID.html">아이디찾기</a></li>
+            <li><a class = "on">비밀번호찾기</a></li>
+        </ul>
+    
+        <div class = findpwcontents>
+            <div class="findpwtext">
+                찾으시려는 ID를 입력하세요
+            </div>
+            <div class="inputid">
+                아이디: <input type = "text" >
+            </div>
+
+            <div class="submitbtn">
+                <button type="submit" id="findpw2btn1" onclick = "check()">다음</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function check() {
+          var fbtn = document.getElementById("findpw2btn1");
+
+            fbtn.onclick = function() {
+                location.href = "findPW.html";
+            }
+        }
+    </script>
+</body>
+</html>

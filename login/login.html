@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="header">
+            <a href="#" >Login</a>
+        </div>
+        <div class="login">
+           <input type = "text" class = "input-login"><br>
+           <input type = "password" class = "input-login"><br>
+
+           <div id="mt">
+            <input type = "checkbox" >로그인 상태 유지
+            <p><a href="Join">회원가입</a> <a href= "#" onclick="openID()">아이디찾기</a> <a href="#" onclick="openPW()">비밀번호찾기 </a></p>
+           </div>
+           <button type ="button" value ="" id = "btn-login">로그인</button>
+        </div>
+
+        <div class ="tpa">
+            <button type ="button" class="btGoogle" onclick="">
+                <span class="icon"></span>
+                <span class = "name">Google 계정으로 로그인</span>
+            </button>
+            <button type ="button" class="btNaver">
+                <span class="icon"></span>
+                <span class="name">Naver 계정으로 로그인</span>
+            </button>
+            <button type ="button" class="btKakao">
+                <span class="icon"></span>
+                <span class="name">KaKao 계정으로 로그인</span>
+            </button>
+        </div>
+    </div>
+
+
+    <script>
+        function openID(){
+            window.open("findID.html","ID찾기","width=610 ,height= 750 , left = 250 , top =100")
+        }
+
+        function openPW() {
+            window.open("findPW2.html" , "PW찾기" , "width=610 , height = 750 , left = 250 , top = 100")
+        }
+
+
+    </script>
+</body>
+
+</html>
