@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <script src='https://cdn.plot.ly/plotly-2.18.0.min.js'></script>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+                <img src="" alt="">
+                <span class="nav-item">고쳐줄게</span>
+            </a>
+        </li>
+        <li><a href="#">
+                <i class="fas fa-home"></i>
+                <span class="nav-item">홈</span>
+            </a>
+        </li>
+        <li><a href="userManage.html">
+                <i class="fas fa-user"></i>
+                <span class="nav-item">회원관리</span>
+            </a>
+        </li>
+        <li><a href="">
+                <i class="fas fa-tasks"></i>
+                <span class="nav-item">관리메뉴2</span>
+            </a>
+        </li>
+        <li><a href="">
+                <i class="fas fa-tasks"></i>
+                <span class="nav-item">관리메뉴3</span>
+            </a>
+        </li>
+        <li><a href="">
+                <i class="fas fa-cog"></i>
+                <span class="nav-item">사용자설정</span>
+            </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="main">
+      <div class="main-top">
+        <h1>현황</h1>
+      </div>
+      <div class="DBcard">
+        <div class="card">
+          <h3>회원관리</h3>
+          <p>DB로부터 값 받아오기</p>
+          <button type="button" id="btn1">분석1</button>
+        </div>
+        <div class="card">
+          <h3>게시물관리</h3>
+          <p>DB로부터 값 받아오기</p>
+          <button type="button" id="btn2">분석2</button>
+        </div>
+        <div class="card">
+          <h3>접수완료건수</h3>
+          <p>DB로부터 불러오기</p>
+          <button type="button" id="btn3">분석3</button>
+        </div>
+        <div class="card">
+          <h3>방문자수</h3>
+          <p>메인페이지방문자수</p>
+          <button type="button" id="btn4">분석4</button>
+        </div>
+      </div>
+
+      <section class="DBviewer">
+        <h1>Process</h1>
+        <div class="DBviewbox">
+          <h3>현황</h3>
+          <div class="viewbox">
+            <div class="box">
+              <div id='barCahrt' width="300" height="230"></div>
+              
+            </div>
+            <div class="box">
+              <div id='lineChart' width="300" height="230"></div>
+              
+              
+            </div>
+            <div class="box">
+              <div id='barCahrt1' width="300" height="230"></div>
+              
+            </div>
+            <div class="box">
+                <div id='pieChart' width="300" height="230"></div>
+                
+              </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+  <script>
+      var btn1 =document.getElementById("btn1");
+      var btn2 =document.getElementById("btn2");
+      var btn3 =document.getElementById("btn3");
+      var btn4 =document.getElementById("btn4");
+      btn1.onclick=function(){
+        var print1 = document.getElementById("print1");
+        //DB값 받아오기 var DBa로 예시로 둠
+        
+      }
+      btn2.onclick=function(){
+        var print2 = document.getElementById("print2");
+        //DB값 받아오기 var DBb
+      }
+      btn3.onclick=function(){
+        var print3 = document.getElementById("print3");
+      }
+      btn4.onclick=function(){
+        var print4 = document.getElementById("print4");
+      }
+      /////////////////////////////////////////////////////////////////////////////////////////////////////
+      var set1 = {
+        y : [12,35,41,59,75,90,100],
+        mode : "lines+markers"
+      }
+      
+      var set2 = {
+        y : [6,11,23,24,30,43,88],
+        mode : "lines+markers"
+      }
+      
+      var set3 = {
+        y : [1,2,9,14,37,66,76],
+        mode : "lines+markers"
+      }
+      
+      var layout = {
+        title:'라인앤 도트 차트'
+      };
+      
+      var data = [set1, set2, set3]
+      
+      Plotly.newPlot('lineChart', data, layout);
+      /////////////////////////////////////////////////////////////////////////////////////////////////////
+      var data = [{
+        values: [223,143,99,67,433],
+        labels: ["애플", "삼성", "LG", "샤오미", "기타"],
+        type: 'pie'
+      }];
+
+      var layout = {
+        title : 'A/S 신청 유형'
+      };
+
+      Plotly.newPlot('pieChart', data, layout);
+      /////////////////////////////////////////////////////////////////////////////////////////////////////
+      var data = [
+        {
+          x: ["비회원(뭘 넣어야될지)", "회원"],
+          y: [240,812],
+          type: 'bar'
+        }
+      ];
+      
+      var layout = {
+        title:'수직형 바차트',
+        xaxis:{
+          // tickangle:-45
+        },
+        bargap:0.1
+      }
+      
+      Plotly.newPlot('barCahrt1', data, layout);
+      /////////////////////////////////////////////////////////////////////////////////////////////////////
+      var data = [
+        {
+          x: [1,45,33,22,199], //수치적는곳 변수로 얻어서 적어줘도됨
+          y: ["ㄱ", "ㄴ", "ㄷ", "ㄹ", "ㅁ"], 
+          type: 'bar',
+          orientation: 'h'
+        }
+      ];
+      
+      var layout = {
+        title:'수평형 바차트',
+        xaxis:{
+          tickangle:-45
+        },
+        bargap:0.1
+      }
+      
+      Plotly.newPlot('barCahrt', data, layout);
+      //////////////////////////////////////////////////////////////////////////////////////////////////////////
+  </script>
+</body>
+</html>

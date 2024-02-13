@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul,li{list-style: none;}
+        body{
+            background-color: whitesmoke;
+            color: #001D3D;
+            margin: 0 auto;
+            width: 494px;
+            /* border: 1px solid #777; */
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-weight: 40px;
+        }
+        textarea{
+            resize: none;
+            overflow: auto;
+            background-color: #F2fd48;
+            font-size: 15px;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-weight: 40px;
+            
+        }
+        p{
+            margin: 10px 0;
+            font-weight: 700s;
+        }
+        ul{
+            margin: 0 auto;
+        }
+        h3{
+            text-align: center;
+        }
+        li{
+            
+            box-shadow: 0 8px 16px rgb(0,0,0,0.7);
+            box-sizing: border-box;
+            width: 300px;
+            background-color: #F2fd48;
+            margin: 10px 0;
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h3>서비스 상세 조회</h3>
+            
+                <ul>
+                    <div class="libox">
+                        <p>신청자: </p>
+                        <li id="regUser"></li>
+                    </div>
+                    <div class="libox">
+                        <p>제품종류: </p>
+                        <li id="prodType"></li>
+                    </div>
+                    <div class="libox">
+                        <p>모델명: </p>
+                        <li id="model"></li>
+                    </div>
+                    <div class="libox">
+                        <p>신청일자: </p>
+                        <li id="regDate"></li>
+                    </div>
+                    <div class="libox">
+                        <p>현재위치: </p>
+                        <li id="currentLocation"></li>
+                    </div>
+                    <div class="libox">
+                        <p>수리여부: </p>
+                        <li id="repair"></li>
+                    </div>
+                    <div class="libox">
+                        <p>완료예상기한:</p>
+                        <li id="repairDate"></li>
+                    </div>    
+                </ul>
+                <p>파손부위:</p>
+                <textarea name="brokenParts" id="brokenDetail" cols="65" rows="14" readonly></textarea>
+            
+        </div>
+    </section>
+    <script>
+        //DB에서 찾아와야 함 변수로 해당 값들을
+        var regUser=document.getElementById("regUser");
+        var prodType=document.getElementById("prodType");
+        var model=document.getElementById("model");
+        var regDate=document.getElementById("regDate");
+        var cLocation=document.getElementById("currentLocation");
+        var repair=document.getElementById("repair");
+        var repairDate=document.getElementById("repairDate");
+        var brokenDetail=document.getElementById("brokenDetail");
+        //DB 변수를 innerHTML에 대입 반드시 문자열
+        //DB변수값을 var로 받아오던 const 로 받아오던 대입하면 됨
+        //var user_name = ....
+        regUser.innerHTML="아놀드수염다제거";
+        prodType.innerHTML="로봇팔";
+        model.innerHTML="SKYNET-T-1000";
+        regDate.innerHTML="01012024";
+        cLocation.innerHTML="집하장";
+        repair.innerHTML="미수리";
+        repairDate.innerHTML="2년";
+        brokenDetail.value="사라코너한테맞음";
+    </script>
+</body>
+</html>
