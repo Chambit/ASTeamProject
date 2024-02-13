@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=M+PLUS+Rounded+1c:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@700&family=M+PLUS+Rounded+1c:wght@800&family=Protest+Strike&display=swap');
 
 *{margin: 0; padding: 0;}
 
@@ -55,7 +56,7 @@ li {display: inline-block; list-style: none; cursor: pointer;}
     font-family: 'M PLUS Rounded 1c', sans-serif; 
 }
 .header2 a:hover {
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     transition: ease-in-out 0.33s;
 }
 a {
@@ -63,9 +64,12 @@ a {
     color: #001D3D;
 }
 .fix {
-    font-family: 'Kanit', sans-serif;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    /* font-family: 'Kanit', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif; */
+    font-family: 'Black Han Sans', sans-serif;
     font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 3px
 }
 
 

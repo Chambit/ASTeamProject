@@ -1,8 +1,44 @@
-/* slogan */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@700&family=M+PLUS+Rounded+1c:wght@800&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@700&family=M+PLUS+Rounded+1c:wght@800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@700&family=M+PLUS+Rounded+1c:wght@800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(242, 242, 242);
+    width: 1420px;
+}
+
+/* ------------ slogan -------------- */
+
+/* --- video ---*/
+.bg-video {
+    /* border: 1px solid black; */
+    position: relative;
+    /* top: 0;
+    left: 0;
+    z-index: -1; */
+    height: 620px;
+    width: 100%;
+}
+
+.bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* --- */
 
 .sloganBOX {
     /* border: 1px solid gray; */
-    background-color: rgb(208, 212, 199);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: rgb(208, 212, 199); */
     height: 620px;
     font-family: 'intelone-mono-font-family-regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2') format('woff2');
@@ -11,7 +47,7 @@
     font-size: bold;
     text-align: center;
     margin-bottom: 60px;
-    letter-spacing:0.08em;
+    letter-spacing: 0.08em;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -23,7 +59,7 @@
     font-size: 40px;
 }
 
-.sloganBOX > .sloganTEXT {
+.sloganBOX>.sloganTEXT {
     font-family: 'intelone-mono-font-family-regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2') format('woff2');
     font-weight: 500;
@@ -32,53 +68,24 @@
     text-align: center;
     margin-left: 200px;
     margin-right: 200px;
-    letter-spacing:0.10em;
+    letter-spacing: 0.10em;
 }
 
-/* footer -------------------------------------------*/
+/* ---------------------------------------------------- */
 
-/* .foot {
-    border: 1px solid gray;
-    background-color: white;
-    width: 100%;
-    height: 66px;
-    box-sizing: border-box;
-    overflow: hidden;
-} */
-
-/* .anggimo {
-    font-family: 'Dongle', sans-serif;
-    font-size: 25px;
-    line-height: 66px;
-    text-align: center;
-    float: left;
-    padding-left: 50px;
-} */
-
-/* -------------------------------------------------- */
-
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-body {
-    background-color: rgb(255, 255, 255);
-}
 
 .midLogo {
     /* border: 1px solid gray; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     text-align: center;
     line-height: 150px;
     height: 150px;
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 50px;
+    padding-top: 10px;
 }
 
 .midbar {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(242, 242, 242);
     position: relative;
     width: 100%;
     height: 100px;
@@ -93,14 +100,14 @@ body {
     margin: 0 auto;
     position: absolute;
     bottom: 46px;
-    left: 210px;
+    left: 220px;
 }
 
 .midToggle2 {
-    border: 2px solid rgb(245, 241, 20);
+    border: 2px solid #f2fd48;
     border-radius: 50px;
     box-sizing: border-box;
-    width: 80%;
+    width: 50%;
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -114,15 +121,15 @@ body {
     position: absolute;
     box-sizing: border-box;
     margin: 0 auto 40px;
-    left: 200px;
-    top: 10px;
+    left: 210px;
+    top: 14px;
 }
 
 .midToggle2Shadow {
-    border: 2px solid rgb(235, 235, 235);
+    border: 4px solid rgb(230, 230, 230);
     border-radius: 50px;
     box-sizing: border-box;
-    width: 80%;
+    width: 50%;
     display: flex;
     text-align: center;
 }
@@ -131,14 +138,16 @@ body {
 .midMenu {
     box-sizing: border-box;
     border-radius: 50px;
-    line-height: 50px;
+    line-height: 45px;
     height: 100%;
     width: 20%;
-
+    color: rgba(56, 56, 56, 0.507);
+    font-size: 11.5px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 .midMenu:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #ffffff9f;
     transition: 0.4s;
     /* margin-top: 1px; */
 }
@@ -192,11 +201,12 @@ body {
 }
 
 .MAC_BOX {
+    background-color: #ffff;
     display: flex;
     width: 69%;
     height: 54%;
     box-sizing: border-box;
-    box-shadow: 3px 3px 10px 5px rgba(221, 219, 219, 0.925);
+    box-shadow: 5px 5px 10px 0px rgba(207, 207, 207, 0.925);
     justify-content: center;
     align-items: center;
     position: relative;
@@ -213,6 +223,13 @@ body {
     height: 98.5%;
     transition: 0.7s;
     opacity: 1;
+    font-size: 40px;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    text-align: center;
+    line-height: 500px;
 }
 
 .MAC {
@@ -240,19 +257,20 @@ body {
 }
 
 .PAD_BOX {
+    background-color: #ffff;
     display: flex;
     width: 30%;
     height: 54%;
     box-sizing: border-box;
-    box-shadow: 3px 3px 10px 5px rgba(221, 219, 219, 0.925);
+    box-shadow: 5px 5px 10px 0px rgba(207, 207, 207, 0.925);
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
 .PAD_BOX:hover .PAD {
-    width: 98.5%;
-    height: 98.5%;
+    width: 98%;
+    height: 97%;
     transition: 0.7s;
 }
 
@@ -261,6 +279,13 @@ body {
     height: 98.5%;
     transition: 0.7s;
     opacity: 1;
+    font-size: 40px;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    text-align: center;
+    line-height: 500px;
 }
 
 .PAD {
@@ -288,11 +313,13 @@ body {
 }
 
 .IPHONE_BOX {
+    background-color: #ffff;
     display: flex;
-    width: 20%;
+    width: 18%;
     height: 44%;
     box-sizing: border-box;
-    box-shadow: 3px 3px 10px 5px rgba(221, 219, 219, 0.925);
+    /* box-shadow: 3px 3px 10px 5px rgba(221, 219, 219, 0.925); */
+    box-shadow: 5px 5px 10px 0px rgba(207, 207, 207, 0.925);
     justify-content: center;
     align-items: center;
     position: relative;
@@ -309,6 +336,13 @@ body {
     height: 98.5%;
     transition: 0.7s;
     opacity: 1;
+    font-size: 40px;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    text-align: center;
+    line-height: 500px;
 }
 
 .IPHONE {
@@ -336,11 +370,13 @@ body {
 }
 
 .AIRPOT_BOX {
+    background-color: #ffff;
     display: flex;
-    width: 20%;
+    width: 36%;
     height: 44%;
     box-sizing: border-box;
-    box-shadow: 3px 3px 10px 5px rgba(221, 219, 219, 0.925);
+    /* box-shadow: 3px 3px 10px 5px rgba(221, 219, 219, 0.925); */
+    box-shadow: 5px 5px 10px 0px rgba(207, 207, 207, 0.925);
     justify-content: center;
     align-items: center;
     position: relative;
@@ -357,6 +393,13 @@ body {
     height: 98.5%;
     transition: 0.7s;
     opacity: 1;
+    font-size: 40px;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    text-align: center;
+    line-height: 500px;
 }
 
 .AIRPOT {
@@ -384,11 +427,13 @@ body {
 }
 
 .APPLE_WATCH_BOX {
+    background-color: #ffff;
     display: flex;
-    width: 20%;
+    width: 25%;
     height: 44%;
     box-sizing: border-box;
-    box-shadow: 3px 3px 10px 5px rgba(221, 219, 219, 0.925);
+    /* box-shadow: 3px 3px 10px 5px rgba(221, 219, 219, 0.925); */
+    box-shadow: 5px 5px 10px 0px rgba(207, 207, 207, 0.925);
     justify-content: center;
     align-items: center;
     position: relative;
@@ -405,6 +450,13 @@ body {
     height: 98.5%;
     transition: 0.7s;
     opacity: 1;
+    font-size: 40px;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    text-align: center;
+    line-height: 500px;
 }
 
 .APPLE_WATCH {
@@ -432,11 +484,13 @@ body {
 }
 
 .APPLE_TV_BOX {
+    background-color: #ffff;
     display: flex;
-    width: 38.8%;
+    width: 18%;
     height: 44%;
     box-sizing: border-box;
-    box-shadow: 3px 3px 10px 5px rgba(221, 219, 219, 0.925);
+    /* box-shadow: 3px 3px 10px 5px rgba(221, 219, 219, 0.925); */
+    box-shadow: 5px 5px 10px 0px rgba(207, 207, 207, 0.925);
     justify-content: center;
     align-items: center;
     position: relative;
@@ -453,6 +507,13 @@ body {
     height: 98.5%;
     transition: 0.7s;
     opacity: 1;
+    font-size: 40px;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    text-align: center;
+    line-height: 500px;
 }
 
 .APPLE_TV {
@@ -491,7 +552,8 @@ body {
 }
 
 .AppForm {
-    background-color: whitesmoke;
+    background-color: #e7e7e7;
+    ;
     border-radius: 5px;
     box-sizing: border-box;
     padding: 20px;
@@ -502,11 +564,17 @@ body {
 }
 
 .FormTitle {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 50px;
     margin-bottom: 30px;
 }
 
 .FormLeft {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     float: left;
     width: 30%;
 }
@@ -517,6 +585,9 @@ body {
 }
 
 .TEXT {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin-top: 20px;
     width: 70%;
     height: 40px;
@@ -556,10 +627,13 @@ body {
 }
 
 input[type=submit] {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     width: 100%;
     height: 60px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ffff;
+    color: black;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -569,5 +643,5 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #f2fd48;
 }

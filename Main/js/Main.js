@@ -11,9 +11,11 @@ document.querySelector(".midbar").addEventListener('click', (e) => {
 
     Array.from(childElements).forEach(function (element) {
         if (target.className === element.className) {
-            element.style.backgroundColor = "rgb(245, 241, 20)"
+            element.style.backgroundColor = "#f2fd48"
+            element.style.color = "rgba(0, 0, 0)"
         } else {
             element.style.backgroundColor = ""
+            element.style.color = "rgba(56, 56, 56, 0.507)"
         }
     });
 
@@ -24,7 +26,7 @@ document.querySelector(".midbar").addEventListener('click', (e) => {
     setTimeout(() => {
         Array.from(shadow1Elements).forEach(function (element) {
             if (target.classList[1] === element.classList[1]) {
-                document.getElementById(element.classList[1]).style.backgroundColor = "rgb(223, 220, 220)"
+                document.getElementById(element.classList[1]).style.backgroundColor = "rgb(230, 230, 230)"
             } else {
                 element.style.backgroundColor = ""
             }

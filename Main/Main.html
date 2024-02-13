@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" type="text/css" href="/Main/css/Main.css">
 </head>
+
 <body>
 
     <!-- header, footer 불러오는 함수. -->
@@ -32,24 +33,33 @@
 
     <header data-include-path="/header_footer/header.html"></header>
 
-
-    <div class="sloganBOX">
-        <h3 class="slogan">Welcome!</h3>
-        <p class="sloganTEXT">Once upon a time, I was born as a genius baby in Seoul. 19 years later, I flew to Chicago
-            to study design, and now, I have become a fully grown design nerd and a UI/UX designer in NYC at WIX.com's
-            Playground. I love playful interaction design, minimalism, and happy dogs.</p>
+    <!-- 슬로건 -->
+    <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="img/MainBackgroundVideoFile.mp4" type="video/mp4"/>
+        </video>
+        <div class="sloganBOX">
+            <h3 class="slogan">Welcome!</h3>
+            <p class="sloganTEXT">Once upon a time, I was born as a genius baby in Seoul. 19 years later, I flew to
+                Chicago
+                to study design, and now, I have become a fully grown design nerd and a UI/UX designer in NYC at
+                WIX.com's
+                Playground. I love playful interaction design, minimalism, and happy dogs.</p>
+        </div>
     </div>
 
+
+    <!-- 미드 메뉴 토글탭 로고. -->
     <div class="midLogo">
-        Selete
+        Fix it
     </div>
 
     <!-- 미드 메뉴 토글탭  -->
     <div class="midbar">
         <div class="midToggleShadow">
             <div class="midToggle2Shadow">
-                <div id="all" class="midMenuShadow all" style="background-color: rgb(223, 220, 220)"></div>
-                <div id="apple" class="midMenuShadow apple"></div>
+                <!-- <div id="all" class="midMenuShadow all"></div> -->
+                <div id="apple" class="midMenuShadow apple" style="background-color: rgb(230, 230, 230)"></div>
                 <div id="samsung" class="midMenuShadow samsung"></div>
                 <div id="LG" class="midMenuShadow LG"></div>
                 <div id="mi" class="midMenuShadow mi"></div>
@@ -59,8 +69,8 @@
 
         <div class="midToggle">
             <div class="midToggle2">
-                <div class="midMenu all" style="background-color: rgb(245, 241, 20)">All</div>
-                <div class="midMenu apple">apple</div>
+                <!-- <div class="midMenu all">All</div> -->
+                <div class="midMenu apple" style="background-color: #f2fd48; color:rgba(0, 0, 0);">apple</div>
                 <div class="midMenu samsung">samsung</div>
                 <div class="midMenu LG">LG</div>
                 <div class="midMenu mi">mi</div>
@@ -75,37 +85,7 @@
 
         <!-- all 인 애들 -->
 
-        <div class="mid all">
-            <div class="midbox">
-                <div class="cardBox">
-                    <div class="MAC_BOX">
-                        <div class="MAC"><img src="/Main/img/MAC.png" alt=""></div>
-                        <div class="hover_MAC IMG"></div>
-                    </div>
-                    <div class="PAD_BOX">
-                        <div class="PAD"><img src="/img/PAD.png" alt=""></div>
-                        <div class="hover_PAD IMG"></div>
-                    </div>
-                    <div class="IPHONE_BOX">
-                        <div class="IPHONE"><img src="/img/IPHONE.png" alt=""></div>
-                        <div class="hover_IPHONE IMG"></div>
-                    </div>
-                    <div class="AIRPOT_BOX">
-                        <div class="AIRPOT"><img src="/img/IPHONE.png" alt=""></div>
-                        <div class="hover_AIRPOT IMG"></div>
-                    </div>
-                    <div class="APPLE_WATCH_BOX">
-                        <div class="APPLE_WATCH"><img src="/img/IPHONE.png" alt=""></div>
-                        <div class="hover_APPLE_WATCH IMG"></div>
-                    </div>
-                    <div class="APPLE_TV_BOX">
-                        <div class="APPLE_TV"><img src="/img/PAD.png" alt=""></div>
-                        <div class="hover_APPLE_TV IMG"></div>
-                    </div>
-                </div>
-            </div>
-
-
+        <!-- <div class="mid all">
             <div class="midbox">
                 <div class="cardBox">
                     <div class="MAC_BOX">
@@ -133,8 +113,38 @@
                         <div class="hover_APPLE_TV IMG"></div>
                     </div>
                 </div>
+            </div> -->
+
+
+        <!-- <div class="midbox">
+                <div class="cardBox">
+                    <div class="MAC_BOX">
+                        <div class="MAC"><img src="/img/MAC.png" alt=""></div>
+                        <div class="hover_MAC IMG"></div>
+                    </div>
+                    <div class="PAD_BOX">
+                        <div class="PAD"><img src="/img/PAD.png" alt=""></div>
+                        <div class="hover_PAD IMG"></div>
+                    </div>
+                    <div class="IPHONE_BOX">
+                        <div class="IPHONE"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="hover_IPHONE IMG"></div>
+                    </div>
+                    <div class="AIRPOT_BOX">
+                        <div class="AIRPOT"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="hover_AIRPOT IMG"></div>
+                    </div>
+                    <div class="APPLE_WATCH_BOX">
+                        <div class="APPLE_WATCH"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="hover_APPLE_WATCH IMG"></div>
+                    </div>
+                    <div class="APPLE_TV_BOX">
+                        <div class="APPLE_TV"><img src="/img/PAD.png" alt=""></div>
+                        <div class="hover_APPLE_TV IMG"></div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </div> -->
 
 
         <!-- all 이 아닌 애들 -->
@@ -143,28 +153,28 @@
             <div class="midbox">
                 <div class="cardBox">
                     <div class="MAC_BOX">
-                        <div class="MAC"><img src="/img/MAC.png" alt=""></div>
-                        <div class="hover_MAC"></div>
+                        <div class="MAC"><img src="/Main/img/MAC.png" alt=""></div>
+                        <div class="hover_MAC IMG">맥북 고쳐준당께요!</div>
                     </div>
                     <div class="PAD_BOX">
-                        <div class="PAD"><img src="/img/PAD.png" alt=""></div>
-                        <div class="hover_PAD"></div>
+                        <div class="PAD"><img src="/Main/img/PAD.png" alt=""></div>
+                        <div class="hover_PAD IMG">아이패드 고쳐준당꼐요!</div>
                     </div>
                     <div class="IPHONE_BOX">
-                        <div class="IPHONE"><img src="/img/IPHONE.png" alt=""></div>
-                        <div class="hover_IPHONE"></div>
+                        <div class="IPHONE"><img src="/Main/img/IPHONE.png" alt=""></div>
+                        <div class="hover_IPHONE IMG">고쳐준다고</div>
                     </div>
                     <div class="AIRPOT_BOX">
-                        <div class="AIRPOT"><img src="/img/IPHONE.png" alt=""></div>
-                        <div class="hover_AIRPOT"></div>
+                        <div class="AIRPOT"><img src="/Main/img/Airpods.png" alt=""></div>
+                        <div class="hover_AIRPOT IMG">당근에 팔아야징~</div>
                     </div>
                     <div class="APPLE_WATCH_BOX">
-                        <div class="APPLE_WATCH"><img src="/img/IPHONE.png" alt=""></div>
-                        <div class="hover_APPLE_WATCH"></div>
+                        <div class="APPLE_WATCH"><img src="/Main/img/AppleWatch.png" alt=""></div>
+                        <div class="hover_APPLE_WATCH IMG">Over Watch.</div>
                     </div>
                     <div class="APPLE_TV_BOX">
-                        <div class="APPLE_TV"><img src="/img/PAD.png" alt=""></div>
-                        <div class="hover_APPLE_TV"></div>
+                        <div class="APPLE_TV"><img src="/Main/img/Steve.png" alt=""></div>
+                        <div class="hover_APPLE_TV IMG">앙~ 애플TV</div>
                     </div>
                 </div>
             </div>
@@ -174,27 +184,27 @@
             <div class="midbox">
                 <div class="cardBox">
                     <div class="MAC_BOX">
-                        <div class="MAC"><img src="/img/다운로드.jpeg" alt=""></div>
+                        <div class="MAC"><img src="/Main/img/다운로드.jpeg" alt=""></div>
                         <div class="hover_MAC"></div>
                     </div>
                     <div class="PAD_BOX">
-                        <div class="PAD"><img src="/img/PAD.png" alt=""></div>
+                        <div class="PAD"><img src="/Main/img/PAD.png" alt=""></div>
                         <div class="hover_PAD"></div>
                     </div>
                     <div class="IPHONE_BOX">
-                        <div class="IPHONE"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="IPHONE"><img src="/Main/img/IPHONE.png" alt=""></div>
                         <div class="hover_IPHONE"></div>
                     </div>
                     <div class="AIRPOT_BOX">
-                        <div class="AIRPOT"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="AIRPOT"><img src="/Main/img/Airpods.png" alt=""></div>
                         <div class="hover_AIRPOT"></div>
                     </div>
                     <div class="APPLE_WATCH_BOX">
-                        <div class="APPLE_WATCH"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="APPLE_WATCH"><img src="/Main/img/AppleWatch.png" alt=""></div>
                         <div class="hover_APPLE_WATCH"></div>
                     </div>
                     <div class="APPLE_TV_BOX">
-                        <div class="APPLE_TV"><img src="/img/PAD.png" alt=""></div>
+                        <div class="APPLE_TV"><img src="/Main/img/PAD.png" alt=""></div>
                         <div class="hover_APPLE_TV"></div>
                     </div>
                 </div>
@@ -236,7 +246,7 @@
         </div>
     </div>
 
-    <footer data-include-path="/html/footer.html"></footer>
+    <footer data-include-path="/header_footer/footer.html"></footer>
 
     <script src="/Main/js/Main.js"></script>
 </body>
