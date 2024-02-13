@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/faq.css">
+
+</head>
+
+<body>
+
+    <!-- header, footer 불러오는 함수. -->
+    <script>
+        window.addEventListener('load', function () {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function (el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+
+    <header data-include-path="/html/header.html"></header>
+
+    <div>
+        <div class="topbox">
+            <div class="topbox2">
+                <div class="bulb"><img src="/img/전구찐.png" alt=""></div>
+                <div class="bulb1"> 쓱-배송 주문더하기 FAQ </div>
+            </div>
+        </div>
+
+        <div class="midbox">
+            <div class="midbox1">
+                <div class="midbox2">
+                    <div class="midInBox1 ">
+                        <div class="midBoxLeft">01</div>
+                        <div class="midBoxRight">주문더하기 언제 할 수 있는건가요</div>
+                        <div class="midBoxRight2">쓱-배송이 가능한 주문에 대해서만 가능하며 상품 준비중 전까지 기존 주문에 상품을 추가 할 수 있습니다.</div>
+                    </div>
+                </div>
+
+                <div class="midbox2 ">
+                    <div class="midInBox2 ">
+                        <div class="midBoxLeft">02</div>
+                        <div class="midBoxRight">으아악 살려주세요!!!</div>
+                        <div class="midBoxRight2">이즈한테 일단 궁썼어 이즈 앞으로가, 코르키!! 코르키!!</div>
+                    </div>
+                </div>
+
+                <div class="midbox2 ">
+                    <div class="midInBox3 ">
+                        <div class="midBoxLeft">03</div>
+                        <div class="midBoxRight">워씽씨~ 쭈떠빠 쩡너 어쩌고 저쩌고</div>
+                        <div class="midBoxRight2">쓱-배송이 가능한 주문에 대해서만 가능하며 상품 준비중 전까지 기존 주문에 상품을 추가 할 수 있습니다.</div>
+                    </div>
+                </div>
+
+                <div class="midbox2">
+                    <div class="midInBox4 ">
+                        <div class="midBoxLeft">04</div>
+                        <div class="midBoxRight">주문더하기 언제 할 수 있는건가요</div>
+                        <div class="midBoxRight2">쓱-배송이 가능한 주문에 대해서만 가능하며 상품 준비중 전까지 기존 주문에 상품을 추가 할 수 있습니다.</div>
+                    </div>
+                </div>
+
+                <div class="midbox2">
+                    <div class="midInBox5 ">
+                        <div class="midBoxLeft">05</div>
+                        <div class="midBoxRight">주문더하기 언제 할 수 있는건가요</div>
+                        <div class="midBoxRight2">쓱-배송이 가능한 주문에 대해서만 가능하며 상품 준비중 전까지 기존 주문에 상품을 추가 할 수 있습니다.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer data-include-path="/html/footer.html"></footer>
+
+    <script src="/js/faq.js"></script>
+
+</body>
+
+</html>
