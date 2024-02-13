@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/MyPage.css">
+
+</head>
+<!-- /* css 미디어쿼리 ( 반응형 웹 사이트 ) 로 만들어야함 */ -->
+
+<body>
+
+    <div class="top">
+        <div class="topBox">
+            <div class="leftCard">
+
+                <div class="ProfileCard">
+                    <img src="/img/전구찐.png" alt="">
+                    <div class="name">이름</div>
+                    <div>
+                        <button class="topBtn">정보수정</button>
+                    </div>
+                    <div>
+                        <button class="topBtn">회원탈퇴</button>
+                    </div>
+                </div>
+
+
+                <div class="infoCard">
+                    ...왼쪽아래
+                </div>
+            </div>
+            <div class="rightCard">
+                <div class="postsCard">
+                    ...오른쪽
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 토글탭 사용하여 각 제조사 마다 카드 띄워주기. -->
+
+    <div class="midbar">
+        <div class="midToggleShadow">
+            <div class="midToggle2Shadow">
+                <div id="all" class="midMenuShadow all" style="background-color: rgb(223, 220, 220)"></div>
+                <div id="apple" class="midMenuShadow apple"></div>
+                <div id="samsung" class="midMenuShadow samsung"></div>
+                <div id="LG" class="midMenuShadow LG"></div>
+                <div id="mi" class="midMenuShadow mi"></div>
+            </div>
+        </div>
+
+        <div class="midToggle">
+            <div class="midToggle2">
+                <div class="midMenu all" style="background-color: rgb(245, 241, 20);">전체</div>
+                <div class="midMenu apple">애플</div>
+                <div class="midMenu samsung">삼성</div>
+                <div class="midMenu LG">LG</div>
+                <div class="midMenu mi">샤오미</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="midBox">
+        <div class="mid all">
+            <div class="midbox">
+                <div class="AScard">
+                    <div class="cardBox">
+                        <div class="card"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mid apple">
+            <div class="midbox">
+                <div class="AScard">
+                    <div class="cardBox">
+                        <div class="card"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mid samsung">
+            <div class="midbox">
+                <div class="AScard">
+                    <div class="cardBox">
+                        <div class="card"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mid LG">
+            <div class="midbox">
+                <div class="AScard">
+                    <div class="cardBox">
+                        <div class="card"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mid mi">
+            <div class="midbox">
+                <div class="AScard">
+                    <div class="cardBox">
+                        <div class="card"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="btn">생성</button>
+
+    <script src="/js/MyPage.js"></script>
+
+</body>
+
+</html>

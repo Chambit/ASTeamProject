@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@700&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=M+PLUS+Rounded+1c:wght@800&display=swap');
+
+* {
+    margin: 0px;
+    bottom: 0px;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.topbox {
+    width: 100%;
+}
+
+.topbox2 {
+    margin-top: 170px;
+}
+
+.bulb {
+    width: 60px;
+    margin-left: 47.9%;
+}
+
+.bulb1 {
+    width: 100%;
+    margin: 1px auto 190px;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Protest Strike', sans-serif;
+    font-weight: bold;
+}
+
+.bulb img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 미드 박스 */
+
+.midbox {
+    height: 80%;
+    width: 100%;
+}
+
+.midbox2 {
+    box-sizing: border-box;
+    width: 800px;
+    height: 230px;
+    border-radius: 55px;
+    overflow: hidden;
+    background-color: rgba(247, 242, 242, 0.87);
+    margin: 30px auto;
+    box-shadow: 15px 15px 7px 0 rgba(221, 219, 219, 0.925);
+    padding: 50px 110px 30px 110px;
+    /* border: 1px solid gray; */
+}
+
+.midbox2.cl1 {
+    transition: height 1s;
+    height: 330px;
+}
+
+.midbox2.cl2 {
+    transition: height 1s;
+    height: 230px;
+}
+
+.midBoxLeft {
+    font-family: 'Dongle', sans-serif;
+    font-size: 120px;
+    float: left;
+    width: 20%;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    /* border: 1px solid gray; */
+    box-sizing: border-box;
+}
+
+.midBoxRight {
+    /* border: 1px solid gray; */
+    padding-top: 10px;
+    float: left;
+    width: 80%;
+    height: 75px;
+    line-height: 75px;
+    box-sizing: border-box;
+    font-family: 'Dongle', sans-serif;
+    font-size: 50px;
+}
+
+.midBoxRight2 {
+    color: gray;
+    font-weight: bold;
+    /* border: 1px solid gray; */
+    float: left;
+    width: 80%;
+    height: 75px;
+}

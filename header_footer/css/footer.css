@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@700&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=M+PLUS+Rounded+1c:wght@800&display=swap');
+
+.foot {
+    /* border: 1px solid gray; */
+    background-color: white;
+    width: 100%;
+    height: 66px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.anggimo {
+    font-family: 'Dongle', sans-serif;
+    font-size: 25px;
+    line-height: 66px;
+    text-align: center;
+    float: left;
+    padding-left: 50px;
+}

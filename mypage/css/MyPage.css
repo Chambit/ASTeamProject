@@ -1,0 +1,197 @@
+* {padding: 0px; margin: 0px;}
+* {list-style: none; }
+
+
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    height: 2000px;
+}
+
+.top{
+    /* border: 1px solid #000; */
+    width: 80%;
+    margin: 100px auto 50px;
+}
+.topBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftCard{
+    width: 48%;
+    box-sizing: border-box;
+}
+.rightCard{
+    /* border: 1px solid #000; */
+    width: 48%;
+    background-color: rgb(235, 235, 235);
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.leftCard .ProfileCard {
+    width: 100%;
+    height: 130px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.ProfileCard .topBtn {
+    border-radius: 50px;
+    width: 60px;
+    height: 30px;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    font-size: 10px;
+}
+
+.leftCard .ProfileCard img{
+    /* border: 1px solid gray; */
+    border-radius: 50px;
+    width: 25%;
+    height: 70%;
+}
+
+.leftCard .ProfileCard .name{
+    /* border: 1px solid gray; */
+    border-radius: 50px;
+    width: 40%;
+    height: 50%;
+    line-height: 65px;
+    text-align: center;
+}
+
+.infoCard{
+    /* border: 1px solid  #000; */
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.midbar {
+    border: 1px solid rgb(250, 250, 250);
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.midToggle {
+    width: 70%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 46px;
+    left: 160px;
+}
+
+.midToggle2 {
+    border: 2px solid rgb(245, 241, 20);
+    border-radius: 50px;
+    box-sizing: border-box;
+    width: 80%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.midToggleShadow {
+    width: 70%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0 auto 40px;
+    left: 150px;
+    top: 10px;
+}
+
+.midToggle2Shadow {
+    border: 2px solid rgb(223, 220, 220);
+    border-radius: 50px;
+    box-sizing: border-box;
+    width: 80%;
+    display: flex;
+    text-align: center;
+}
+
+
+.midMenu {
+    box-sizing: border-box;
+    border-radius: 50px;
+    line-height: 50px;
+    height: 100%;
+    width: 20%;
+
+}
+
+.midMenuShadow {
+    /* background-color: rgb(104, 104, 104); */
+    box-sizing: border-box;
+    border-radius: 50px;
+    height: 100%;
+    width: 20%;
+}
+
+.mid {
+    /* border: 1px solid gray; */
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 50px;
+    background-color: rgb(235, 235, 235);
+}
+
+.midbox {
+    width: 100%;
+}   
+
+.AScard {
+    /* border: 1px solid gray; */
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.cardBox {
+    padding: 20px 20px;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.card {
+    border: 1px solid rgb(209, 209, 209);
+    background-color: rgb(235, 235, 235);
+    border-radius: 50px;
+    height: 200px;
+    width: 100%;
+}
+
+#btn {
+    display: block;
+    width: 40px;
+    margin: 20px auto;
+}

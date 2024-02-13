@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="/Main/css/Main.css">
+</head>
+<body>
+
+    <!-- header, footer 불러오는 함수. -->
+    <script>
+        window.addEventListener('load', function () {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function (el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+
+    <header data-include-path="/header_footer/header.html"></header>
+
+
+    <div class="sloganBOX">
+        <h3 class="slogan">Welcome!</h3>
+        <p class="sloganTEXT">Once upon a time, I was born as a genius baby in Seoul. 19 years later, I flew to Chicago
+            to study design, and now, I have become a fully grown design nerd and a UI/UX designer in NYC at WIX.com's
+            Playground. I love playful interaction design, minimalism, and happy dogs.</p>
+    </div>
+
+    <div class="midLogo">
+        Selete
+    </div>
+
+    <!-- 미드 메뉴 토글탭  -->
+    <div class="midbar">
+        <div class="midToggleShadow">
+            <div class="midToggle2Shadow">
+                <div id="all" class="midMenuShadow all" style="background-color: rgb(223, 220, 220)"></div>
+                <div id="apple" class="midMenuShadow apple"></div>
+                <div id="samsung" class="midMenuShadow samsung"></div>
+                <div id="LG" class="midMenuShadow LG"></div>
+                <div id="mi" class="midMenuShadow mi"></div>
+                <div id="gita" class="midMenuShadow gita"></div>
+            </div>
+        </div>
+
+        <div class="midToggle">
+            <div class="midToggle2">
+                <div class="midMenu all" style="background-color: rgb(245, 241, 20)">All</div>
+                <div class="midMenu apple">apple</div>
+                <div class="midMenu samsung">samsung</div>
+                <div class="midMenu LG">LG</div>
+                <div class="midMenu mi">mi</div>
+                <div class="midMenu gita">others</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 미드 메뉴 토글탭 선택 시 바뀔 이미지 -->
+    <div class="midSelect">
+
+        <!-- all 인 애들 -->
+
+        <div class="mid all">
+            <div class="midbox">
+                <div class="cardBox">
+                    <div class="MAC_BOX">
+                        <div class="MAC"><img src="/Main/img/MAC.png" alt=""></div>
+                        <div class="hover_MAC IMG"></div>
+                    </div>
+                    <div class="PAD_BOX">
+                        <div class="PAD"><img src="/img/PAD.png" alt=""></div>
+                        <div class="hover_PAD IMG"></div>
+                    </div>
+                    <div class="IPHONE_BOX">
+                        <div class="IPHONE"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="hover_IPHONE IMG"></div>
+                    </div>
+                    <div class="AIRPOT_BOX">
+                        <div class="AIRPOT"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="hover_AIRPOT IMG"></div>
+                    </div>
+                    <div class="APPLE_WATCH_BOX">
+                        <div class="APPLE_WATCH"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="hover_APPLE_WATCH IMG"></div>
+                    </div>
+                    <div class="APPLE_TV_BOX">
+                        <div class="APPLE_TV"><img src="/img/PAD.png" alt=""></div>
+                        <div class="hover_APPLE_TV IMG"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="midbox">
+                <div class="cardBox">
+                    <div class="MAC_BOX">
+                        <div class="MAC"><img src="/img/MAC.png" alt=""></div>
+                        <div class="hover_MAC IMG"></div>
+                    </div>
+                    <div class="PAD_BOX">
+                        <div class="PAD"><img src="/img/PAD.png" alt=""></div>
+                        <div class="hover_PAD IMG"></div>
+                    </div>
+                    <div class="IPHONE_BOX">
+                        <div class="IPHONE"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="hover_IPHONE IMG"></div>
+                    </div>
+                    <div class="AIRPOT_BOX">
+                        <div class="AIRPOT"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="hover_AIRPOT IMG"></div>
+                    </div>
+                    <div class="APPLE_WATCH_BOX">
+                        <div class="APPLE_WATCH"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="hover_APPLE_WATCH IMG"></div>
+                    </div>
+                    <div class="APPLE_TV_BOX">
+                        <div class="APPLE_TV"><img src="/img/PAD.png" alt=""></div>
+                        <div class="hover_APPLE_TV IMG"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- all 이 아닌 애들 -->
+
+        <div class="mid apple">
+            <div class="midbox">
+                <div class="cardBox">
+                    <div class="MAC_BOX">
+                        <div class="MAC"><img src="/img/MAC.png" alt=""></div>
+                        <div class="hover_MAC"></div>
+                    </div>
+                    <div class="PAD_BOX">
+                        <div class="PAD"><img src="/img/PAD.png" alt=""></div>
+                        <div class="hover_PAD"></div>
+                    </div>
+                    <div class="IPHONE_BOX">
+                        <div class="IPHONE"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="hover_IPHONE"></div>
+                    </div>
+                    <div class="AIRPOT_BOX">
+                        <div class="AIRPOT"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="hover_AIRPOT"></div>
+                    </div>
+                    <div class="APPLE_WATCH_BOX">
+                        <div class="APPLE_WATCH"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="hover_APPLE_WATCH"></div>
+                    </div>
+                    <div class="APPLE_TV_BOX">
+                        <div class="APPLE_TV"><img src="/img/PAD.png" alt=""></div>
+                        <div class="hover_APPLE_TV"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mid samsung">
+            <div class="midbox">
+                <div class="cardBox">
+                    <div class="MAC_BOX">
+                        <div class="MAC"><img src="/img/다운로드.jpeg" alt=""></div>
+                        <div class="hover_MAC"></div>
+                    </div>
+                    <div class="PAD_BOX">
+                        <div class="PAD"><img src="/img/PAD.png" alt=""></div>
+                        <div class="hover_PAD"></div>
+                    </div>
+                    <div class="IPHONE_BOX">
+                        <div class="IPHONE"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="hover_IPHONE"></div>
+                    </div>
+                    <div class="AIRPOT_BOX">
+                        <div class="AIRPOT"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="hover_AIRPOT"></div>
+                    </div>
+                    <div class="APPLE_WATCH_BOX">
+                        <div class="APPLE_WATCH"><img src="/img/IPHONE.png" alt=""></div>
+                        <div class="hover_APPLE_WATCH"></div>
+                    </div>
+                    <div class="APPLE_TV_BOX">
+                        <div class="APPLE_TV"><img src="/img/PAD.png" alt=""></div>
+                        <div class="hover_APPLE_TV"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="FormBOX1">
+        <div class="FormBOX2">
+            <div class="AppForm">
+                <form action="">
+                    <div class="FormTitle">신청서</div>
+                    <div class="FormLeft">
+                        <div class="TEXT">제품 시리즈</div>
+                        <div class="TEXT">상세 모델명</div>
+                        <div class="TEXT">이름 </div>
+                        <div class="TEXT">전화번호</div>
+                        <div class="TEXT">주소</div>
+                        <div class="TEXT">계좌번호</div>
+                    </div>
+                    <div class="FormRight">
+                        <input class="input1" type="text" readonly>
+                        <input class="input1" type="text">
+                        <input class="input1" type="text">
+                        <input class="input1" type="text">
+                        <input class="input1" type="text">
+                        <input class="input1" type="text">
+                    </div>
+                    <div class="TEXT" style="width: 100%; 
+                                    height: 40px; 
+                                    clear: both; 
+                                    text-align: center;
+                                    padding-top: 30px;">요청사항</div>
+                    <textarea class="textarea" name="message" rows="5" cols="80" maxlength="200"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer data-include-path="/html/footer.html"></footer>
+
+    <script src="/Main/js/Main.js"></script>
+</body>
+
+</html>
